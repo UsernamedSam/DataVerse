@@ -1,11 +1,39 @@
+HTML
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Dataverse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Ejercicios</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+<body>
+    <header>
+        <h1>¡Bienvenido! Tu guía de fitness comienza aquí.</h1>
+    </header>
+    <main>
+        <section id="exercise-list">
+            <h2>Selecciona un grupo muscular:</h2>
+            <form>
+                <label for="title">Selecciona aquí:</label>
+                <input type="text" id="title" name="title" required>
+            </form>
+        </section>
+        <section id="excercise-section">
+            <h2>Ejercicios:</h2>
+              <form>
+                <label for="title">Selecciona aquí:</label>
+               <input type="text" id="title" name="title" required>
+              </form>
+            <div id="root"></div>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Registro de Ejercicios</p>
+      <p>&copy; Samira Subía</p>
+    </footer>
     <script src="main.js" type="module"></script>
-  </body>
+</body>
 </html>
+
