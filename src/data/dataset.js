@@ -1,5 +1,3 @@
-Data.js
-
 export default [
     {
       "id": "squats",

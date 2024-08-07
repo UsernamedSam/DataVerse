@@ -7,3 +7,7 @@ export const example = () => {
 export const anotherExample = () => {
   return [];
 };
+function filterData(){
+  //Aqui va el codigo que se va a ejecutar
+
+}
