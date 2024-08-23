@@ -1,67 +1,73 @@
 header {
-    background-color: #4CAF50;
     color: white;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
-}
-
+    height: 3.75rem; /* 60px / 16px/rem = 3.75rem */
+  }
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: linear-gradient(to right top, #350000, #41060a, #4e0f11, #5c1915, #692219, #71281b, #792d1e, #813320, #853622, #893924, #8e3c26, #923f28);
+  /* Elimina estos elementos predeterminado del navegador */
+  margin: 0;
+  padding: 0;
+  /*flexbox*/
+  min-height: 100vh;
+  justify-content: center;
 }
-
-main {
-    padding: 1rem;
-    width: 100%;
-    max-width: 800px;
+h2 {
+  color: white;
 }
+.filter-section {
+  color: white;
+}
+.sort-section{
+  color: white;
+}
+ul {
+  list-style: none;
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
   
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
 }
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
+li {
+  /*flex: 1;*/
+  width: 90%;
+  height: 100%;
+  margin: 1%;
 }
-
-button:hover {
-    background-color: #45a049;
-}
-
 .exercise-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 1rem;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .exercise-card h2 {
-    margin-bottom: 0.5rem;
-  }
-  
-  .exercise-card p {
-    margin-bottom: 0.5rem;
-  }
-  
-  .exercise-card img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
+  background-color: #f0f0f0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; /* Cada tarjeta ocupará el 48% del ancho disponible */
+  padding: 2%;
+  border-radius: 5px;
+  text-align: center;
+}
 
-#excercise-list {
-    margin-top: 1rem;
+/*#filter, #sort {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}*/
+.exercise-card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+footer {
+  background-color: #333;  /* Aplica un fondo gris oscuro al pie de página */
+  color: white;  /* Establece el color del texto en blanco */
+  text-align: center;  /* Centra el texto dentro del pie de página */
+  padding: 1%;  /* Añade espacio interno (padding) dentro del pie de página */
+  width: 100%;  /* Asegura que el pie de página ocupe todo el ancho de la pantalla */
+ /* position: fixed;   Fija el pie de página en la parte inferior de la ventana */
+  bottom: 0;  /* Coloca el pie de página en la parte inferior de la pantalla */
 }
 

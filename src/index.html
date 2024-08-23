@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro de Ejercicios</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header>
     <h1>¡Bienvenido! Tu guía de fitness comienza aquí.</h1>
   </header>
   <main>
-    <section id="excercise-section">
-      <h2>Ejercicios:</h2>
+    <section id="form-section">
+      <h2>Ejercicios</h2>
+      <div class="form-section">
       <form>
-        <label for="filter">Selecciona un Grupo muscular:</label> 
+        <label class= "filter-section" for="filter">Selecciona un Grupo muscular:</label> 
         <select id="filter" data-testid="select-filter" name="muscleGroup">
-          <option value="none"></option>
+          <option value="all">Todos</option>
           <option value="Piernas">Piernas</option>
           <option value="Glúteos">Glúteos</option>
           <option value="Pecho">Pecho</option>
           <option value="Espalda">Espalda</option>
         </select>
       </form>
+      <form>
+        <label class="sort-section" for="sort">Ordenar por:</label>
+        <select id="sort" data-testid="sort-select" name="sortBy">
+          <option value="asc">A-Z</option>
+          <option value="dsc">Z-A</option>
+        </select>
+      </form>
+    </div>
       <div id="root"></div>
     </section>
+   <button>Limpiar filtros</button>
   </main>
   <footer>
     <p>&copy; Samira Subía</p>
@@ -34,4 +42,3 @@
   <script src="main.js" type="module"></script>
 </body>
 </html>
-<!-- <input type="text" id="title" name="title" required> -->

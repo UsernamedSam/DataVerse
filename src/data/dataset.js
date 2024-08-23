@@ -1,4 +1,4 @@
-export default [
+export default [ 
     {
       "id": "squats",
       "name": "Sentadillas (Squats)",
@@ -38,7 +38,7 @@ export default [
       "description": "El Step Up es un ejercicio que se realiza subiendo un pie a una plataforma elevada y luego elevando todo el cuerpo hasta que ambas piernas estén rectas. Este ejercicio es excelente para fortalecer las piernas y los glúteos, mejorando el equilibrio y la coordinación.",
       "imageUrl": "https://static.vecteezy.com/system/resources/previews/008/631/581/original/woman-doing-dumbbell-step-ups-exercise-flat-illustration-isolated-on-white-background-vector.jpg",
       "facts": {
-        "muscleGroup": "Piernas/Glúteos",
+        "muscleGroup": "Glúteos",
         "equipmentNeeded": "Plataforma elevada",
         "difficultyLevel": "Intermedio",
       },
@@ -390,4 +390,5 @@ export default [
       }
     }
   ];
-  //npm run test:oas-prompting"
+  
+  
