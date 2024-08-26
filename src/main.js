@@ -36,7 +36,7 @@ muscleGroupFilterElement.addEventListener("change", function () {
       showExercises(exerciseForShowing, criteriaOrder); // Muestra los ejercicios filtrados
     } 
   }
-
+  
 })
 
 const sortElm = document.getElementById("sort");
