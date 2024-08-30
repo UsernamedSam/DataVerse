@@ -6,7 +6,7 @@ import { sortExercises } from './dataFunctions.js';
 let criteriaOrder = 'asc'; 
 
 function showExercises(exercises, sortCriteria) {
-  const mainContainer = document.getElementById("root");
+  const mainContainer = document.querySelector("#root");
   mainContainer.innerHTML = "";
   exercises = sortExercises(exercises, 'name', sortCriteria);
   mainContainer.appendChild(renderItems(exercises)); 
@@ -36,7 +36,7 @@ muscleGroupFilterElement.addEventListener("change", function () {
   
 })
 
-const sortElm = document.getElementById("sort");
+const sortElm = document.querySelector("#sort");
 sortElm.addEventListener("change", function(evt){
   console.log(evt.target.value);
   criteriaOrder = evt.target.value;

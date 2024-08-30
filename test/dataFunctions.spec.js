@@ -15,7 +15,7 @@ describe('muscleGroupFilter', () => {
 describe('sortExercises', () => {
 
   it('Retornar un arreglo en orden alfabetico ascendente', () => { 
-    const arrayAsc = sortExercises(dataNames, 'name')
+    const arrayAsc = sortExercises(dataNames, 'name', 'asc')
     expect(arrayAsc).toEqual([
       {
         "name" : "Prensa de pierna "
@@ -30,3 +30,22 @@ describe('sortExercises', () => {
     ])
   });
 });
+
+describe('sortExercises', () => {
+
+  it('Retornar un arreglo en orden alfabetico descendente', () => {
+    const arrayDsc = sortExercises(dataNames, 'name', 'dsc')
+    expect(arrayDsc).toEqual([
+      {
+        "name" : "Step up"
+      },
+      {
+        "name" : "Sentadillas"
+      },
+      {
+        "name" : "Prensa de pierna "
+      }
+    ])
+  });
+});
+console.log("hola mundo");

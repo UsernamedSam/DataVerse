@@ -13,10 +13,10 @@ function ascendingOrder(a,b) {
 function descendingOrder(a,b) {
   return b.name.localeCompare(a.name);
 }
-export function sortExercises(exercises, criterion, ascendente) {
+export function sortExercises(exercises, criterion, orden) {
   return exercises.sort((a, b) => {
     if (criterion === 'name') {
-      return ascendente === 'asc'? ascendingOrder(a, b) : descendingOrder(a, b); 
+      return orden === 'asc'? ascendingOrder(a, b) : descendingOrder(a, b); 
     }
     return 0;
   });
